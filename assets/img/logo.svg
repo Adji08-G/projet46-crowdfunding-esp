@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="degradeBouclier" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1F4E79"/>
+      <stop offset="100%" stop-color="#0d2b45"/>
+    </linearGradient>
+    <linearGradient id="degradeCourbe" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F2B705"/>
+      <stop offset="100%" stop-color="#F2E205"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Bouclier : symbole de protection / assurance -->
+  <path d="M100 12
+           L172 40
+           L172 96
+           C172 142 142 172 100 190
+           C58 172 28 142 28 96
+           L28 40
+           Z"
+        fill="url(#degradeBouclier)" stroke="#ffffff" stroke-width="3"/>
+
+  <!-- Courbe actuarielle ascendante -->
+  <polyline points="52,128 78,104 96,118 122,80 148,58"
+            fill="none" stroke="url(#degradeCourbe)" stroke-width="7"
+            stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Points de données sur la courbe -->
+  <circle cx="52" cy="128" r="5" fill="#ffffff"/>
+  <circle cx="78" cy="104" r="5" fill="#ffffff"/>
+  <circle cx="96" cy="118" r="5" fill="#ffffff"/>
+  <circle cx="122" cy="80" r="5" fill="#ffffff"/>
+  <circle cx="148" cy="58" r="5" fill="#F2B705"/>
+
+  <!-- Flèche de croissance -->
+  <polygon points="148,58 162,58 148,72" fill="#F2B705"/>
+</svg>

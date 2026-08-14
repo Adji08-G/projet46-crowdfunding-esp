@@ -1,0 +1,23 @@
+/* Personnalisation légère par-dessus Bootstrap */
+
+body {
+    background-color: #f4f6f9;
+}
+
+.card {
+    border-radius: 0.75rem;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+table th {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        font-size: 0.85rem;
+    }
+}
